@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Set body height to viewport height */
+}
+
+.container {
+    position: relative; /* Set container position to relative */
+    display: inline-block;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%; 
+    margin-left: 50px;
+}
+
+.circle-container {
+    position: absolute; /* Set circle container position to absolute */
+    text-align: center; /* Center the text and circle */
+}
+
+.text {
+    margin-bottom: 5px; /* Space between text and circle */
+    font-size: 14px; /* Set text size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -100%);
+    text-align: center; /* Set text color */
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray background */
+    padding: 5px; /* Add padding to make background visible */
+    font-weight: bold;
+}
+
+.circle {
+    background-color: red; /* Set circle color */
+    width: 10px; /* Set circle diameter */
+    height: 10px; /* Set circle diameter */
+    border-radius: 50%; /* Make circle round */
+    border: 2px solid white; /* Add border for contrast */
+    opacity: 0.5;
+}
+.slider-container {
+    position: absolute;
+    right: -250px; /* Position the slider container to the right */
+    top: 30%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.slider {
+    width: 300px;
+}
+
+.year-display {
+    font-size: 2em;
+}
+.low-crime {
+    background-color: green;
+}
+
+.medium-crime {
+    background-color: yellow;
+}
+
+.high-crime {
+    background-color: red;
+}
